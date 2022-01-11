@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Very-dark-blue-main-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--Very-dark-blue-card-bg);
+  max-width: 33rem;
+  margin: auto;
+  margin-top: 12%;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+}
+
+.card .overlay {
+  position: absolute;
+  background-color: var(--Cyan);
+  opacity: 0;
+  width: 29rem;
+  height: 29rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  border-radius: 1rem;
+  -webkit-transition: 0.2s opacity ease;
+  transition: 0.2s opacity ease;
+  cursor: pointer;
+}
+
+.card .eye-icon {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.card-img {
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-main-title {
+  margin-bottom: 1.2rem;
+}
+
+.card-main-title .card-link {
+  color: white;
+  font-size: 24px;
+}
+
+.card-main-title .card-link:hover {
+  color: var(--Cyan);
+}
+
+.card-info {
+  color: var(--Soft-blue);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.card-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.card-data-amount {
+  color: var(--Cyan);
+  font-weight: 600;
+}
+
+.card-data-amount .eth-logo {
+  margin-right: 5px;
+}
+
+.card-data-time-left {
+  color: var(--Soft-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.card-data-time-left .clock {
+  margin-right: 0.5rem;
+}
+
+.card .line {
+  height: 0.1rem;
+  background-color: var(--Very-dark-blue-line);
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.card .footer {
+  color: var(--Soft-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card .footer-img {
+  height: 3rem;
+  border: 0.1rem white solid;
+  border-radius: 100%;
+  margin-right: 1.5rem;
+}
+
+.card .footer-name-link {
+  color: var(--White);
+  margin-left: 0.5rem;
+}
+
+.card .footer-name-link:hover {
+  color: var(--Cyan);
+}
+/*# sourceMappingURL=main.css.map */
